@@ -1,0 +1,30 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+head{
+    font-family: 'Times New Roman', Times, serif;
+    color:darkred;
+    text-align: center;
+}
+
+body {
+    background-color:antiquewhite;
+    font-family:'Times New Roman', Times, serif;
+    color: darkred;
+    text-align: center;
+    padding: 50px;
+    margin: 50px;
+    padding-bottom: 500px;
+}
+button.menu {
+    color: darkred;
+    background-color: white;
+    padding: 5px;
+}
+
+button.payment :hover { 
+    background-color: yellow;
+    padding: 5px;
+}
