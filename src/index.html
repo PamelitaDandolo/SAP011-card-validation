@@ -5,29 +5,43 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link rel="shortcut icon" href="img/favico-sdv.ico" type="image/x-icon" alt="ícone" sizes="20x20"/> 
       <title>Senhora dos Ventos</title>
+      <script src="index.js"></script>
       <link rel="stylesheet" href="style.css"/>
     </head>
 
   <body> 
-    <header>  
-        <img src="img/logotipo-sdv.png" alt="sdv-logo-peacock" height="150">
+    <header class="cabeçalho">  
+        <img src="img/logotipo-sdv.png" alt="Logo SDV" height="150">
         <h1>Bem vinda(e) à Senhora dos Ventos</h1>  
         <h2>O seu estúdio de yoga e terapias</h2>
     </header>
   
     <main> 
-    <h4>MENU</h4>
+    <h4>MENU</h4> <!-- trocar botões por lista-->
     <button class="menu">Início</button>  
     <button class="menu">Missão</button> 
     <button class="menu">Quem Sou</button> 
     <button class="menu">Terapias</button> 
     <button class="menu">Aulas</button>
-    
-    <h3><em>Obrigada por agendar o seu atendimento</em></h3>
     <hr>
+    <h3><em>Obrigada por agendar o seu atendimento</em></h3>
     <p>Por gentileza, digite abaixo os dados para pagamento via cartão de crédito.</p>
-    <br><br>
-    <button class="payment"><strong>PAGAMENTO</strong></button>
+    <!-- input type text para adicionar texto na caixa, placeholder: aparece a mensagem na caixa até começar a digitar, 
+    submit é o botão enviar
+    <input type="text" name="clientName" placeholder="Digite seu nome completo"> Nome completo </input><input type="submit"><br><br> -->
+    
+    <!-- Inserir uma caixa para os dados do cartão de crédito, tipo "password" ou tipo senha,
+    ao colocar os números do cartão eles não aparecem na caixa e sim pontinhos neste caso
+    maxlenth é o número máximo de caracteres que a caixa vai aceitar
+    required torna o campo obrigatório, é uma validação simples-->
+  
+    <input type ="password" name="cardNumber" id="cardNumber" maxlength="16" 
+    placeholder="0000 0000 0000 0000" autocomplete="off"> Número do cartão sem os espaços</input><!-- placeholder mostra onde colocar 
+      os números e autocomplete "off" não deixa que o preenchimento seja automático-->
+    <button type="submit"> 
+
+    <!-- Inserir abaixo um botão para confirmar se o cartão é válido-->
+    <!-- as caixas de texto e número estão centralizadas, alinhar a direita com css posteriormente-->
     </a>
     
     <br><br><br><br><br><br>
