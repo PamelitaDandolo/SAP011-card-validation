@@ -17,6 +17,7 @@
     </header>
   
     <main> 
+      <nav>
     <h4>MENU</h4> <!-- trocar botões por lista-->
     <button class="menu">Início</button>  
     <button class="menu">Missão</button> 
@@ -36,15 +37,16 @@
     required torna o campo obrigatório, é uma validação simples-->
   
     <input type ="password" name="cardNumber" id="cardNumber" maxlength="16" 
-    placeholder="0000 0000 0000 0000" autocomplete="off"> Número do cartão sem os espaços</input><!-- placeholder mostra onde colocar 
+    placeholder="0000 0000 0000 0000" autocomplete="off">Número do cartão sem os espaços</input><!-- placeholder mostra onde colocar 
       os números e autocomplete "off" não deixa que o preenchimento seja automático-->
-    <button type="submit"> 
+      <br><br>
+    <button class= "payment" type="submit" id="validateCardNumber">Validar</button>
 
     <!-- Inserir abaixo um botão para confirmar se o cartão é válido-->
     <!-- as caixas de texto e número estão centralizadas, alinhar a direita com css posteriormente-->
-    </a>
     
     <br><br><br><br><br><br>
+    </nav>
     </main> 
 <footer>
   <p>Pamela Dándolo&copy; for Laboratória&copy; 2023 </p>
