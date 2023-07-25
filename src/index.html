@@ -29,19 +29,23 @@
     <br>
     <h3><em>Obrigada por agendar o seu atendimento de yoga massagem.</em></h3>
     <p>Por gentileza, digite no campo abaixo os dados para pagamento via cartão de crédito.</p>
-  <div class="input_container"><!-- armazena um grupo de infos da mesma função-->
-    <input type ="password" name="cardNumber" id="cardNumber" maxlength="16" pattern="[0-9]{16}"
-    placeholder="0000 0000 0000 0000" autocomplete="off" required>   Número do cartão sem os espaços</input>
-    <!-- Inserir uma caixa para os dados do cartão de crédito, tipo "password" ou tipo senha, ao colocar os números 
-    do cartão eles não aparecem na caixa e sim pontinhos neste caso, maxlenth é o número máximo de caracteres que a caixa vai aceitar
-    required torna o campo obrigatório placeholder mostra onde colocar os números e autocomplete "off" não deixa que o preenchimento seja automático-->
-    <button class="button" type="submit" id="pagCardNumber"><b>Validar</b></button>
-    <p id="validCard"></p>
+  <form class="input_container"><!-- armazena um grupo de infos de uma mesma função-->
+    <input type ="password" name="cardNumber" id="numCartao" maxlength="16" pattern="[0-9]{16}"
+    placeholder="0000000000000000" autocomplete="off" required>   Número do cartão sem os espaços</input>
+    <!-- input tipo "password" ou tipo senha, ao colocar os números do cartão eles não aparecem na caixa e sim pontinhos, 
+    maxlenth é o número máximo de caracteres que a caixa vai aceitar, required torna o campo obrigatório, placeholder mostra onde colocar 
+    os números e autocomplete "off" não deixa que o preenchimento seja automático-->
+
+    <button class="button" type="submit" id="enviar"><b>Validar</b></button>
+    <p id="cartaoValido"></p> <!-- esse id vai mostrar no códido se o cartão é válido ou não-->
+    <p id="espacoVazio"></p>  <!--esse id é para avisar sobre os espaços vazio-->
     <br><br><br>
-  </div>
-    <br><br><br><br><br><br>
+  </form> <!-- form é um formulário ou elemento container que guarda informações interativas do usuário-->
+   
+  <br><br><br><br><br><br>
     </nav>
     </main> 
+    <script src="index.js" type="module"> </script> <!--type module encapsula códigos e facilita importar e exportar entre arquivos JS-->
 <footer>
   <p>Pamela Dándolo&copy; for Laboratória&copy; 2023 </p>
 </footer> 
