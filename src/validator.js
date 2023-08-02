@@ -1,92 +1,55 @@
-const validator = {
-// recebe primeiro o algoritmo de luhn... tem duas funções
-// //colocar numeros dentro de uma array
-// //converter array em strings (split)
-// //converter strings em numeros (map)
-// //inverter a ordem os números com a função (reverse), 
-// //identificar os npumeros pares e multiplicar os números por 2
-// //somar o produto dos números 
-// //somar todos os números do array
-// //verificar se a soma dos dígitos é multiplo de 10 (termina em 0)
-// //exibir a mensagem de validação (return true ou false)
-
-
-
-
- 
-
-    isValid: function isValid() { // é uma chave: valor - algoritmo de luhn
-      
-      // Remove todos os caracteres não numéricos do número do cartão.
-      const numCardValid = numCard.replace(/\D/g, ''); //só reconhece e armazena números
-
-      // Inicializa a variável "soma" com 0 para calcular a soma dos dígitos.
-      let soma = 0;
-
-      // Indica se o dígito atual é o segundo dígito a ser processado.
-      let segundoDigito = false;
-    
-      // Itera através dos dígitos do número do cartão de crédito, começando do último dígito.
-      for (let i = numCardValid.length - 1; i >= 0; i--) { 
-
-        // Converte o dígito atual em um número inteiro.
-        let digit = parseInt(numCardValid.charAt(i)); //reconhece se estão entre 0 e 9
-    
-        // Verifica se o dígito atual deve ser multiplicado por 2.
-        if (segundoDigito) {
-          digit *= 2;
-    
-          // Se o resultado da multiplicação for maior ou igual a 10, soma os dígitos individualmente.
-          if (digit >= 10) {
-            digit = digit.toString();
-            digit = parseInt(digit.charAt(0)) + parseInt(digit.charAt(1));
-          }
-        }
-    
-        // Adiciona o dígito (ou a soma dos dígitos, no caso de multiplicação por 2) à variável "sum".
-        soma += digit;
-        // Alterna a flag "isSecondDigit" para indicar o próximo dígito.
-        segundoDigito = !segundoDigito;
-      }
-    
-      // Retorna um objeto com a validade do número do cartão (true ou false).
-      return soma % 10 === 0;
-    },
+const validator = { //validator são os dois códigos, maskify e isValid
   
+  //começa validação pelo algoritmo de Luhn
+  isValid:function(numCard) {//a função usa como parâmetro o numCard que é o número do cartão
+    //colocar os números dentro de uma array
+    const cardArrays = []; //array vazia para receber as strings do cartão
+    let soma = 0; //calcula a soma dos dígitos do cartão
+
+    //passa por cada número do cartão converte em número inteiro
+    for (let index = 0; index < numCard.length; index++) {
+      const cadaNumero = numCard[index];
+      cardArrays.push(parseInt(cadaNumero));
+    }
 
 
-
-    //maskify deu certo, não mexer!
-    maskify:function(numCard){  
-      //const numCard = 
-       let digitMascarados = ""; //cria uma variável incialmente vazia que armazenará o número do cartão
-      if(numCard.length>4){ //verifica se tem mais de 4 dígitos
-      
-        const ultimosDigitos = numCard.substr(-4);
-        const digitosOcultos = "#".repeat(numCard.length - 4);
-        digitMascarados = digitosOcultos + ultimosDigitos;
-      
+    //a ppartir do penúltimo dígito, multiplica por 2 os números pares
+    for (let index = cardArrays.length - 2; index >= 0; index -= 2) {
+      const digitoAtual = cardArrays[index] * 2;
+      if (digitoAtual > 9) { //se o resultado for maior que 9
+        cardArrays[index] = digitoAtual % 10 + 1; //soma o produto para virar 1 dígito
       } else {
-      
-        digitMascarados = numCard;
+        cardArrays[index] = digitoAtual; // ou não faz nada
       }
-      
-      return digitMascarados
-      
-      }
-  };
+    }
+  
+    for (let index = 0; index < cardArrays.length; index++) {//soma todos os dígitos
+      soma = soma + cardArrays[index];
+    }
+    
+    if (soma % 10 === 0) {
+      return true;
+    } else {
+      return false;
+    }
+        
+  },
 
+  maskify:function(numCard){  //maskify deu certo, não mexer!
+  
+    let digitMascarados = ""; //cria uma variável incialmente vazia que armazenará o número do cartão
+    if(numCard.length>4){ //verifica se tem mais de 4 dígitos
+      const ultimosDigitos = numCard.substr(-4); //subtrai os 4 últimos 
+      const digitosOcultos = "#".repeat(numCard.length - 4); //coloca # nos demais
+      digitMascarados = digitosOcultos + ultimosDigitos;      
+    } else {
+      digitMascarados = numCard;
+    }
+    return digitMascarados
+  
+  },
 
-
-  export default validator; //maskify tem que estar dentro do validator que é um objeto
-
-
-
-
-
-
-
-
-
-
+};
+   
+export default validator; 
 
