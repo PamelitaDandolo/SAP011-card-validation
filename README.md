@@ -2,7 +2,7 @@
 
 ## Primeiro projeto do bootcamp da Laboratória realizado em julho de 2023.
 
-# Índice
+## Índice
 
 * [1. Introdução](#1-Introdução)
 * [2. Resumo do projeto](#2-Resumo-do-projeto)
@@ -83,19 +83,24 @@ Segue abaixo o protótipo de alta definição e o site final apresentado ao fina
 - Escrever um README para apresentação
 São alguns dos objetivos de aprendizagem desenvolvidos através deste projeto.
 
-Projeto pronto:
+## **Projeto pronto:** 
+
 ![Card validation funcionando](card-validation-demo.gif)
 
 ## 6.Considerações gerais
+#### *Projeto em desenvolvimento.*
 
+Este projeto será aprimorado a medida que novas implementações forem aprendidas.
 
 ## 7.Acesse o projeto!
+//link do git pages
+
 ## 8.Contato
 
+## [linkedin](https://www.linkedin.com/in/pamela-d%C3%A1ndolo-486ab8182/)
+## [GitHub](https://github.com/PamelitaDandolo)
 
 
-
-### *Projeto em desenvolvimento.*
 
 
 
