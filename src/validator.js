@@ -1,4 +1,4 @@
-const validator = { //validator são os dois códigos, maskify e isValid
+const validator = { 
   
   //começa validação pelo algoritmo de Luhn
   isValid:function(numCard) {//a função usa como parâmetro o numCard que é o número do cartão
@@ -13,11 +13,11 @@ const validator = { //validator são os dois códigos, maskify e isValid
     }
 
 
-    //a ppartir do penúltimo dígito, multiplica por 2 os números pares
+    //a partir do penúltimo dígito, multiplica por 2 os números pares
     for (let index = cardArrays.length - 2; index >= 0; index -= 2) {
       const digitoAtual = cardArrays[index] * 2;
-      if (digitoAtual > 9) { //se o resultado for maior que 9
-        cardArrays[index] = digitoAtual % 10 + 1; //soma o produto para virar 1 dígito
+      if (digitoAtual > 9) { //se o resultado for maior que 9 soma o produto para virar 1 dígito
+        cardArrays[index] = digitoAtual % 10 + 1; 
       } else {
         cardArrays[index] = digitoAtual; // ou não faz nada
       }
