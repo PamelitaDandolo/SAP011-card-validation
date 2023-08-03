@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="shortcut icon" href="img/favico-sdv.ico" type="image/x-icon" alt="ícone" sizes="20x20"/> 
+      <title>Senhora dos Ventos</title>
+      <script src="index.js"></script>
+      <link rel="stylesheet" href="style.css"/>
+    </head>
+
+
+  <body> 
+    <header class="cabeçalho">  
+        <img src="img/logotipo-sdv.png" alt="Logo SDV" height="150">
+        <h1>Bem vinda(e) à Senhora dos Ventos</h1>  
+        <h2>O seu estúdio de yoga e terapias</h2>
+    </header>
+  
+
+    <main> 
+      <nav>
+        <div class="menu">
+          <h4>MENU</h4> 
+          <button class="menu">Início</button>  
+          <button class="menu">Missão</button> 
+          <button class="menu">Quem Sou</button> 
+          <button class="menu">Terapias</button> 
+          <button class="menu">Aulas</button>
+        </div>
+      </nav>
+      <br>
+      <form class="input_container"> 
+        <h3><em>Obrigada por agendar o seu atendimento de yoga massagem.</em></h3>
+        <p>Por gentileza, digite no campo abaixo os dados para pagamento via cartão de crédito.</p>
+        <input type ="text" name="cardNumber" id="numCartao" maxlength="16" pattern="[0-9]"
+        placeholder="################" autocomplete="off" required><label> Digite o número do cartão sem os espaços</label>
+        <button class="button" type="submit" id="enviar"><b>Validar</b></button>
+        <p id="validacao" name="cartao-valido-ou-nao"></p>
+        <p id="numeros-mascarados" name="numeros-mascarados"></p>
+        <p id="true-false-boolean" name="validacaofinal"></p>
+        <br><br><br>
+      </form>
+    </main> 
+    
+  <footer>
+    <p>Pamela Dándolo&copy; for Laboratória&copy; 2023 </p>
+  </footer> 
+    <script src="index.js" type="module"></script> <!--type module encapsula códigos e facilita importar e exportar entre arquivos JS-->
+</body>
+</html>
