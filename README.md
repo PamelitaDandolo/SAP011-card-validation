@@ -50,10 +50,10 @@ Este primeiro projeto foi desafiador, sem praticamente nenhum conhecimento prév
 
 A primeira coisa que fiz foi esboçar o visual da página através de um protótipo de baixa fidelidade, esse protótipo foi feito à lápis já que meu processo criativo flui melhor a partir da escrita e do desenho.
 
-![Protótipo de baixa fidelidade](baixa-fidelidade1.png) 
 Esse foi o primeiro esboço onde planejava uma página de boas vindas e uma segunda página com a área para pagamento.
+![Protótipo de baixa fidelidade](baixa-fidelidade1.png) 
 
-Decidi por manter tudo em uma única página e priorizar meu aprendizado além de cumprir com os criterios estabelecidos para aceitação do mesmo.
+Decidi por manter tudo em uma única página e priorizar meu aprendizado além de cumprir com os critérios estabelecidos para aceitação do mesmo.
 
 O segundo protótipo de baixa fidelidade ficou dessa forma:
 ![Protótipo definitivo](baixa-fidelidade.png)
