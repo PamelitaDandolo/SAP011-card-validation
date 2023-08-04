@@ -93,11 +93,11 @@ São alguns dos objetivos de aprendizagem desenvolvidos através deste projeto.
 Este projeto será aprimorado a medida que novas implementações forem aprendidas.
 
 ## 7.Acesse o projeto!
-//link do git pages
+## [Github-pages](https://pamelitadandolo.github.io/SAP011-card-validation/)
 
 ## 8.Contato
 
-## [linkedin](https://www.linkedin.com/in/pamela-d%C3%A1ndolo-486ab8182/)
+## [Linkedin](https://www.linkedin.com/in/pamela-d%C3%A1ndolo-486ab8182/)
 ## [GitHub](https://github.com/PamelitaDandolo)
 
 
