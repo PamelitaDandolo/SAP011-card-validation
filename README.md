@@ -84,10 +84,12 @@ Segue abaixo o protótipo de alta definição e o site final apresentado ao fina
 São alguns dos objetivos de aprendizagem desenvolvidos através deste projeto.
 
 ## **Projeto pronto:** 
+Visualização pelo desktop:
 
 ![Card validation funcionando](card-validation-demo.gif)
 
 A aplicação também pode ser exibida na tela do celular.
+
 ![Visualização pelo celular](card-validation-on-cel.gif.gif)
 
 ## 6.Considerações gerais
