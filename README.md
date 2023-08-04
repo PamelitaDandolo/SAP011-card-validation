@@ -87,6 +87,9 @@ São alguns dos objetivos de aprendizagem desenvolvidos através deste projeto.
 
 ![Card validation funcionando](card-validation-demo.gif)
 
+A aplicação também pode ser exibida na tela do celular.
+![Visualização pelo celular](card-validation-on-cel.gif.gif)
+
 ## 6.Considerações gerais
 #### *Projeto em desenvolvimento.*
 
